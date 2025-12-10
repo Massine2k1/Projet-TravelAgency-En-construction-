@@ -1,7 +1,7 @@
 TICKETS - PROJET SITE VITRINE SYMFONY
 
 1. Agim
-- Initialiser le projet : symfony new --webapp
+- Initialiser le projet : symfony new --webapp ✅
 - Mettre en place le routage pour : accueil, voyager, about, contact
 - Créer le layout global : templates/base.html.twig
 - Développer la page : accueil

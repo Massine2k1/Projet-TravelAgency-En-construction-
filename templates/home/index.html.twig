@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil - TravelAgency{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	<link rel="stylesheet" href="/css/home.css">
+{% endblock %}
+
+{% block content %}
+    <section class="hero">
+        <div class="container">
+            <h1>Découvrez le monde avec TravelAgency</h1>
+            <p>Votre partenaire de confiance pour des voyages inoubliables</p>
+            <a href="{{ path('destinations') }}" class="btn">Découvrir nos destinations</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="section">
+            <h2 class="section-title">Pourquoi choisir TravelAgency ?</h2>
+            <p class="section-subtitle">Nous vous accompagnons dans la réalisation de vos rêves de voyage avec professionnalisme et passion.</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">Expertise</h3>
+                        <p class="card-text">Plus de 20 ans d'expérience dans l'organisation de voyages sur mesure et de séjours mémorables.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">Destinations</h3>
+                        <p class="card-text">Un large choix de destinations à travers le monde, de l'exotisme des îles aux métropoles dynamiques.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">Service personnalisé</h3>
+                        <p class="card-text">Chaque voyage est unique. Nous adaptons nos offres à vos envies et votre budget.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Destinations populaires</h2>
+            <p class="section-subtitle">Explorez nos destinations les plus prisées</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=600&fit=crop" alt="Paris" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Paris, France</h3>
+                        <p class="card-text">Découvrez la ville lumière, ses monuments emblématiques et sa culture riche.</p>
+                        <a href="{{ path('destinations') }}" class="card-link">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&h=600&fit=crop" alt="Maldives" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Maldives</h3>
+                        <p class="card-text">Paradis tropical avec des eaux turquoise et des plages de sable blanc immaculées.</p>
+                        <a href="{{ path('destinations') }}" class="card-link">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&h=600&fit=crop" alt="Tokyo" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Tokyo, Japon</h3>
+                        <p class="card-text">Plongez dans la culture japonaise, entre tradition et modernité fascinantes.</p>
+                        <a href="{{ path('destinations') }}" class="card-link">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

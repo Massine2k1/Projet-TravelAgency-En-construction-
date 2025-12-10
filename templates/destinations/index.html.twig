@@ -1,0 +1,100 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Destinations - TravelAgency{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	<link rel="stylesheet" href="/css/destinations.css">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <section class="section">
+            <h1 class="section-title">Nos Destinations</h1>
+            <p class="section-subtitle">Explorez le monde avec notre sélection de destinations exceptionnelles</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=600&fit=crop" alt="Paris" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Paris, France</h3>
+                        <p class="card-text">La capitale française vous accueille avec ses musées, ses monuments historiques et sa gastronomie renommée. Parfait pour un séjour culturel ou romantique.</p>
+                        <p class="card-text"><strong>Durée recommandée :</strong> 3-5 jours</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&h=600&fit=crop" alt="Maldives" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Maldives</h3>
+                        <p class="card-text">Archipel paradisiaque dans l'océan Indien. Plongée sous-marine, spa, villas sur pilotis... Un séjour de rêve pour se ressourcer.</p>
+                        <p class="card-text"><strong>Durée recommandée :</strong> 7-10 jours</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1661963745503-8b3a86b8c2b1?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tokyo" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Tokyo, Japon</h3>
+                        <p class="card-text">Métropole fascinante alliant tradition et innovation. Temples anciens, quartiers animés, cuisine exceptionnelle.</p>
+                        <p class="card-text"><strong>Durée recommandée :</strong> 5-7 jours</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&h=600&fit=crop" alt="New York" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">New York, États-Unis</h3>
+                        <p class="card-text">La ville qui ne dort jamais. Découvrez Broadway, Central Park, les musées et l'énergie unique de la Grosse Pomme.</p>
+                        <p class="card-text"><strong>Durée recommandée :</strong> 5-7 jours</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bali" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Bali, Indonésie</h3>
+                        <p class="card-text">Île des dieux avec ses rizières en terrasses, ses temples hindous et ses plages de sable noir. Parfait pour le yoga et la détente.</p>
+                        <p class="card-text"><strong>Durée recommandée :</strong> 7-14 jours</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800&h=600&fit=crop" alt="Santorini" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Santorini, Grèce</h3>
+                        <p class="card-text">Île grecque aux maisons blanches et aux couchers de soleil légendaires. Vins locaux et cuisine méditerranéenne.</p>
+                        <p class="card-text"><strong>Durée recommandée :</strong> 4-6 jours</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop" alt="Dubai" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Dubai, Émirats Arabes Unis</h3>
+                        <p class="card-text">Métropole futuriste avec ses gratte-ciels, ses centres commerciaux de luxe et ses expériences uniques au monde.</p>
+                        <p class="card-text"><strong>Durée recommandée :</strong> 4-6 jours</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop" alt="Barcelone" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Barcelone, Espagne</h3>
+                        <p class="card-text">Ville catalane vibrante avec l'architecture de Gaudí, ses plages, sa vie nocturne et sa gastronomie méditerranéenne.</p>
+                        <p class="card-text"><strong>Durée recommandée :</strong> 4-5 jours</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1685311572420-513619470404?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Marrakech" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Marrakech, Maroc</h3>
+                        <p class="card-text">Ville impériale aux souks colorés, aux palais et jardins, et à la cuisine épicée. Immersion dans la culture marocaine.</p>
+                        <p class="card-text"><strong>Durée recommandée :</strong> 4-6 jours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}
